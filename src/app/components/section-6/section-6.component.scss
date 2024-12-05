@@ -1,0 +1,96 @@
+.dilvant {
+    //dilvant-section-6
+    &__section-6 {
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        position: relative;
+    }
+    &__section-6-shape {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    &__section-6-content {
+        padding: 160px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+    &__section-6-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__section-6-right-content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &__section-6-right-title {
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 56px;
+        font-weight: 800;
+        line-height: 61.6px;
+        text-align: left;
+    }
+    &__section-6-right-subtitle {
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 38.4px;
+        text-align: left;
+    }
+    &__section-6-right-button {
+        color: #D4A206;
+        border-radius: 50px;
+        border: 2px solid #D4A206;
+        background: transparent;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        padding: 20px 48px;
+    }
+    &__section-6-left {
+        width: 100%;
+        height: 100%;
+        border-radius: 64px;
+        overflow: hidden;
+    }
+    &__section-6-left-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .dilvant {
+        &__section-6-content {
+            padding: 60px 0px 40px 0px;
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+        &__section-6-right-title {
+            font-size: 36px;
+            line-height: 40px;
+        }
+        &__section-6-right-subtitle {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__section-6-right-content {
+            width: 100%;
+            gap: 20px;
+        }
+        &__section-6-left {
+            max-height: 350px;
+        }
+    }
+}

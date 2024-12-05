@@ -1,0 +1,133 @@
+.dilvant {
+    //header
+    &__header {
+        width: 100%;
+        height: auto;
+        background: #001405;
+    }
+    &__header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0px;
+        position: relative;
+    }
+    &__header-title {
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 52.8px;
+        text-align: left;
+    }
+    &__header-menu-list {
+        display: flex;
+        gap: 48px;
+    }
+    &__header-subtitle {
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        display: flex;
+        gap: 13px;
+    }
+    &__header-subtitle-span {
+        position: relative;
+        cursor: pointer;
+        &:hover::after {
+            width: 100%;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            background-color: #FFFFFF;
+            height: 4px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+            transition: .3s;
+        }
+    }
+    &__header-button {
+        background: #D4A206;
+        padding: 12px 28px;
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        border-radius: 50px;
+        border: 2px solid #D4A206;
+        display: block;
+    }
+    &__header-button-mobile {
+        background: #D4A206;
+        padding: 10px 20px;
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        border-radius: 50px;
+        border: 2px solid #D4A206;
+        display: none;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .dilvant {
+        &__header-button {
+            display: none;
+        }
+        &__header-button-mobile {
+            display: block;
+            position: absolute;
+            right: 0px;
+            bottom: -25px;
+            z-index: 1;
+        }
+    }
+}
+
+@media only screen and (max-width:630px) {
+    .dilvant {
+        &__header-title {
+            font-size: 36px;
+            line-height: 40px;
+        }
+        &__header-menu-list {
+            gap: 15px;
+        }
+        &__header-subtitle {
+            font-size: 14px;
+            line-height: 20px;
+            gap: 10px;
+        }
+        &__header-button-mobile {
+            bottom: -30px;
+        }
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .dilvant {
+        &__header-content {
+            flex-direction: column;
+            gap: 10px;
+        }
+        &__header-title {
+            font-size: 48px;
+            line-height: 52.8px;
+        }
+        &__header-menu-list {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+}

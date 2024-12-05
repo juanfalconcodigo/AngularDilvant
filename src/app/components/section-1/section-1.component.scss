@@ -1,0 +1,95 @@
+.dilvant {
+    //dilvant-section-1
+    &__section-1 {
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        position: relative;
+    }
+    &__section-1-shape {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    &__section-1-content {
+        padding: 59px 0px 80px 0px;
+        display: grid;
+        grid-template-columns: 1.125fr 1fr;
+        gap: 80px;
+    }
+    &__section-1-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__section-1-left-content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &__section-1-left-title {
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 56px;
+        font-weight: 800;
+        line-height: 61.6px;
+        text-align: left;
+    }
+    &__section-1-left-subtitle {
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 38.4px;
+        text-align: left;
+    }
+    &__section-1-left-button {
+        color: #D4A206;
+        border-radius: 50px;
+        border: 2px solid #D4A206;
+        background: transparent;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        padding: 20px 48px;
+    }
+    &__section-1-right {
+        width: 100%;
+        height: 100%;
+        border-radius: 62px;
+        overflow: hidden;
+    }
+    &__section-1-right-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .dilvant {
+        &__section-1-content {
+            padding: 40px 0px 60px 0px;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        &__section-1-left-content {
+            gap: 20px;
+        }
+        &__section-1-left-title {
+            font-size: 36px;
+            line-height: 40px;
+        }
+        &__section-1-left-subtitle {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &__section-1-right {
+            max-height: 350px;
+        }
+    }
+}
